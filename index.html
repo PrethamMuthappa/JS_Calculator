@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="dist/output.css">
+  <script src="/index.js"></script>
+</head>
+<body class="flex flex-wrap ">
+  <!-- calci main body-->
+  <div class=" rounded-lg flex flex-wrap flex-row border-2 border-black h-[650px] w-[500px] ml-auto mr-auto   mt-[50px] bg-gray-800  hover:bg-gradient-to-br from-gray-800 to-gray-900  shadow-2xl shadow-black"    >
+    <!--calci display-->
+    <div class=" rounded-lg bg-white flex flex-wrap flex-row border-2 border-black h-[150px] w-[400px] ml-auto mr-auto mt-[20px] justify-end " >
+      <!-- calci input disp-->
+      <td colspan="3"> <input  class=" border-2 border-black w-[100%] text-4xl text-end bg-green-100 shadow-inner shadow-black "  type="text" id="result" disabled /> </td>
+    </div>
+     
+    <!--button body-->
+    <div class=" rounded-md  flex flex-wrap flex-row border-2 border-black h-[459px] w-[400px] ml-auto mr-auto justify-around bg-slate-400">
+
+      <input type="button"  value="7" class=" border-2 border-red-200 border-b-4 border-r-4  bg-black rounded-[10px] text-white h-[70px] w-[80px] mt-2 shadow-sm shadow-red-700 hover:bg-gradient-to-t from-black to-gray-500 hover:translate-x-1 hover: cursor-pointer   " onclick="display('7')">
+      <input type="button"  value="8" class=" border-2 border-red-200 border-b-4 border-r-4  bg-black rounded-[10px] text-white h-[70px] w-[80px] mt-2 shadow-sm shadow-red-700 hover:bg-gradient-to-t from-black to-gray-500 hover:translate-x-1 hover: cursor-pointer   " onclick="display('9')">
+      <input type="button"  value="9" class=" border-2 border-red-200 border-b-4 border-r-4  bg-black rounded-[10px] text-white h-[70px] w-[80px] mt-2 shadow-sm shadow-red-700 hover:bg-gradient-to-t from-black to-gray-500 hover:translate-x-1 hover: cursor-pointer   " onclick="display('9')">
+      <input type="button"  value="+" class=" border-2 border-red-200 border-b-4 border-r-4  bg-black rounded-[10px] text-white h-[70px] w-[80px] mt-2 shadow-sm shadow-red-700 hover:bg-gradient-to-t from-black to-gray-500 hover:translate-x-1 hover: cursor-pointer   " onclick="display('+')">      
+      <input type="button"  value="4" class=" border-2 border-red-200 border-b-4 border-r-4  bg-black rounded-[10px] text-white h-[70px] w-[80px] mt-2 shadow-sm shadow-red-700 hover:bg-gradient-to-t from-black to-gray-500 hover:translate-x-1 hover: cursor-pointer   " onclick="display('4')">
+      <input type="button"  value="5" class=" border-2 border-red-200 border-b-4 border-r-4  bg-black rounded-[10px] text-white h-[70px] w-[80px] mt-2 shadow-sm shadow-red-700 hover:bg-gradient-to-t from-black to-gray-500 hover:translate-x-1 hover: cursor-pointer   " onclick="display('5')">
+      <input type="button"  value="6" class=" border-2 border-red-200 border-b-4 border-r-4  bg-black rounded-[10px] text-white h-[70px] w-[80px] mt-2 shadow-sm shadow-red-700 hover:bg-gradient-to-t from-black to-gray-500 hover:translate-x-1 hover: cursor-pointer   " onclick="display('6')">
+      <input type="button"  value="-" class=" border-2 border-red-200 border-b-4 border-r-4  bg-black rounded-[10px] text-white h-[70px] w-[80px] mt-2 shadow-sm shadow-red-700 hover:bg-gradient-to-t from-black to-gray-500 hover:translate-x-1 hover: cursor-pointer   " onclick="display('-')">
+      <input type="button"  value="1" class=" border-2 border-red-200 border-b-4 border-r-4  bg-black rounded-[10px] text-white h-[70px] w-[80px] mt-2 shadow-sm shadow-red-700 hover:bg-gradient-to-t from-black to-gray-500 hover:translate-x-1 hover: cursor-pointer   " onclick="display('1')">
+      <input type="button"  value="2" class=" border-2 border-red-200 border-b-4 border-r-4  bg-black rounded-[10px] text-white h-[70px] w-[80px] mt-2 shadow-sm shadow-red-700 hover:bg-gradient-to-t from-black to-gray-500 hover:translate-x-1 hover: cursor-pointer   " onclick="display('2')">
+      <input type="button"  value="3" class=" border-2 border-red-200 border-b-4 border-r-4  bg-black rounded-[10px] text-white h-[70px] w-[80px] mt-2 shadow-sm shadow-red-700 hover:bg-gradient-to-t from-black to-gray-500 hover:translate-x-1 hover: cursor-pointer   " onclick="display('3')">
+      <input type="button"  value="*" class=" border-2 border-red-200 border-b-4 border-r-4  bg-black rounded-[10px] text-white h-[150px] w-[80px] mt-2 shadow-sm shadow-red-700 hover:bg-gradient-to-t from-black to-gray-500 hover:translate-x-1 hover: cursor-pointer   " onclick="display('*')">
+      <input type="button"  value="0" class="  border-2 border-red-200 border-b-4 border-r-4  bg-black rounded-[10px] text-white h-[70px] w-[80px] mt-[-70px] shadow-sm shadow-red-700 hover:bg-gradient-to-t from-black to-gray-500 hover:translate-x-1 hover: cursor-pointer   " onclick="display('0')">
+      <input type="button"  value="." class=" border-2 border-red-200 border-b-4 border-r-4  bg-black rounded-[10px] text-white h-[70px] w-[80px] mt-[-70px] shadow-sm shadow-red-700 hover:bg-gradient-to-t from-black to-gray-500 hover:translate-x-1 hover: cursor-pointer   " onclick="display('.')">
+      <input type="button"  value="/" class=" border-2 border-red-200 border-b-4 border-r-4  bg-black rounded-[10px] text-white h-[70px] w-[80px] mt-[-70px] shadow-sm shadow-red-700 hover:bg-gradient-to-t from-black to-gray-500 hover:translate-x-1 hover: cursor-pointer   " onclick="display('/')">
+      <input type="button"  value="C" class=" border-2 border-red-200 border-b-4 border-r-4  bg-red-800 rounded-[10px] text-white h-[70px] w-[80px] mt-2 shadow-sm shadow-red-700 hover:bg-gradient-to-t from-red-800 to-red-600 hover:translate-x-1 hover: cursor-pointer   " onclick="clearscreen()">
+      <input type="button"  value="=" class=" border-2 border-red-200 border-b-4 border-r-4  bg-black rounded-[10px] text-white h-[70px] w-[80px] mt-[-70px] shadow-sm shadow-red-700 hover:bg-gradient-to-t from-black to-gray-500 hover:translate-x-1 hover: cursor-pointer   " onclick="calculate()">
+      <input type="button"  value="=" class=" border-2 border-red-200 border-b-4 border-r-4  bg-black rounded-[10px] text-white h-[70px] w-[80px] mt-[-70px] shadow-sm shadow-red-700 hover:bg-gradient-to-t from-black to-gray-500 hover:translate-x-1 hover: cursor-pointer   " onclick="calculate()">
+      <input type="button"  value="pi" class=" border-2 border-red-200 border-b-4 border-r-4  bg-black rounded-[10px] text-white h-[70px] w-[80px] mt-[-70px] mr-[90px] shadow-sm shadow-red-700 hover:bg-gradient-to-t from-black to-gray-500 hover:translate-x-1 hover: cursor-pointer   " onclick="display('3.14')">
+     
+    </div>
+
+
+ </div>
+
+
+
+
+
+
+</body>
+</html>
