@@ -1,5 +1,5 @@
 
-display=(value)=>
+display=(value)=
 {
 document.getElementById("result").value+=value;
 }
