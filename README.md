@@ -1,5 +1,5 @@
 # JS_Calculator
-a simple calculator built using html , css(tailwind) and javascript
+a simple calculator built using html , css(tailwindCSS) and javascript
 <br>
 
 This simple Calculator can perform all basic arithmetic operations and the buttons are animated to hover and box shadows have been over the calculator body and display <br>
